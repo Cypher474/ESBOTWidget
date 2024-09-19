@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Widget Test</title>
+</head>
+<body>
+  <h1>Embedding Chat Widget</h1>
+
+  <div id="es-student-chat-widget"></div>
+
+  <!-- Include React and ReactDOM libraries -->
+  <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+
+  <!-- Include your bundled widget script -->
+  <script src="/Integration/final/ESStudentbot/dist/widget.bundle.js"></script>
+  <script src="dist/widget.bundle.js"></script>
+
+  <!-- Call the render function to load the widget into the div -->
+  <script>
+    window.renderESChatWidget('#es-student-chat-widget');
+  </script>
+</body>
+</html>
